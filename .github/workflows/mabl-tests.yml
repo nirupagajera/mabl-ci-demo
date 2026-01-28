@@ -27,8 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run mabl tests
-        uses: nirupagajera/mabl-ci-demo
+        uses: mablhq/setup-mabl-cli@v1
         with:
-          api-key: ${{secrets.MABL}}
+          api-key: ${{ secrets.MABL_API_KEY }}
           workspace-id: S0Lyap998vxobfmPcroNwA-w
           plan-id: rUODduRcRzK5OlNgft2KhQ-p
