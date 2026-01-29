@@ -343,10 +343,3 @@ If ANY element is not checked → the audit is FAILED.
 
 ---
 
-## 🏁 GOLDEN LAW
-
-**Design defines reality.  
-Live must obey.  
-Extra = BUG.  
-Missing = BUG.  
-Different = BUG.**
