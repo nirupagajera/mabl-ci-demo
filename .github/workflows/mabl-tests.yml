@@ -32,5 +32,7 @@ jobs:
           MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
         with:
           plan-labels: regression
+          application-id: CkmQWnmbQjcgNXczh7OYzw-a
+          environment-id: WdR6MMy57yQhue8ssVTxdw-e
           workspace-id: S0Lyap998vxobfmPcroNwA-w
           plan-id: rUODduRcRzK5OlNgft2KhQ-p
