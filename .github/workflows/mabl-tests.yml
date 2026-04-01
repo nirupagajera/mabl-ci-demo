@@ -3,7 +3,7 @@ name: Run mabl Tests
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   mabl-test:
