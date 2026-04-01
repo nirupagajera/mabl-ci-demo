@@ -17,10 +17,8 @@ jobs:
         run: npm install -g @mablhq/mabl-cli
 
       - name: Run mabl Tests
-        run: echo "Key length: ${#MABL_API_KEY}"
+        run: |
+          mabl auth activate-key $MABL_API_KEY
+          mabl plans run --id qskFEzdq4CtODVQDqogwjQ-p --exit-on-failure
         env:
           MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
-        with:
-          plan-id: qskFEzdq4CtODVQDqogwjQ-p
-          application-id: X1Gy84LsnWZfRRxgHdS0Rg
-          environment-id: q2Pb9Zqiglp9MKrNA9BzmA
